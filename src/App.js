@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import NameProp from './components/NameProp';
+import Contacts from './components/Contacts';
+import State from './components/State';
 
-function App() {
+function App() { /* this is the root component */
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Contacts name="Collin" age="26" school="North Central" graduationYear="2013" />
+      <p>----------------------------</p>
+      <State />
     </div>
   );
 }
